@@ -1,0 +1,12 @@
+.choose{
+    padding-top: 5px;
+    width: 60rpx;
+    margin-left: 550rpx;
+}
+
+text image{
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 15rpx;
+}

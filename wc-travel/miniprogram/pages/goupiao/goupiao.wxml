@@ -1,0 +1,14 @@
+
+ <image class="ticket-image" src="{{byImg[0].url}}" mode="aspectFill"></image>
+<view class="container">
+    <view wx:for="{{tickets}}" wx:key="index" class="ticket">
+        <view class="ticket-info">
+           <text class="ticket-name">{{item.name}}</text>
+            <text class="ticket-price">¥{{item.price}}</text>
+            <!-- <text class="ticket-detail">{{item.openingHours}} / {{item.location}}</text> -->
+            <text class="ticket-detail">{{item.openingHours}} </text>
+        </view>
+        <button class="buy-button" bindtap="buyTicket">立即购买</button>
+    </view>
+    
+</view>

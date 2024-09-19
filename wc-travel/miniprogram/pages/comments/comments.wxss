@@ -1,0 +1,74 @@
+/* 整体样式 */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+} 
+/* 卡片区域整体样式   */
+.card{
+  width: 710rpx;
+  border-radius: 20rpx;
+  background-color:white;
+  margin: 20rpx 0;
+}
+/* 卡片信息区 */
+.card-head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* 头像 */
+.avatar{
+  width: 100rpx;
+  border-radius: 50%;
+  margin: 0 20rpx;
+}
+/* 文字信息 */
+.title{
+  display: flex;
+  flex-direction: column;
+}
+.comment{
+  margin-left: 10px;
+  display: flex;
+  font-size: medium;
+}
+/* 昵称 */
+.nickName{
+  font-size: 35rpx;
+  margin: 0 10rpx;
+}
+
+/* 卡片日期 */
+.card-foot{
+  font-size: 30rpx;
+  color: gray;
+  margin: 0 10rpx;
+}
+.card-body image{
+  width: 80%;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 15rpx;
+}
+
+/* 分割线 */
+.divider{
+  width: 80%;
+  margin-top: 10px;
+}
+.divider-line{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(136, 134, 134);
+  display:block ;
+  margin-bottom: 10px;
+}
+/* 评论按钮 */
+.floatBtn {
+    position: fixed;
+    top: 1000rpx;
+    right: 50rpx;
+}

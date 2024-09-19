@@ -1,0 +1,52 @@
+/* pages/register/register.wxss */
+page {
+  background-color: rgb(245, 245, 245);
+}
+
+.top {
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.tip {
+  color: red;
+  margin: 20rpx;
+}
+
+.item {
+  display: flex;
+  margin: 50rpx;
+  align-items: center;
+}
+
+.item text {
+  color: black;
+}
+
+.item image{
+    margin-left: auto;  
+    margin-right: auto;    
+    width: 300rpx;
+}
+
+.item input {
+  width: 400rpx;
+  height: 80rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid gray;
+}
+
+.picker {
+  width: 400rpx;
+  margin-left: 30rpx;
+  color: #2E8B57;
+
+}
+
+#btn1 {
+  color: white;
+  margin-top: 70rpx;
+  background-color: #2E8B57;
+  width: 600rpx;
+  border-radius: 50rpx;
+}

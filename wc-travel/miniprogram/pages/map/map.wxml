@@ -1,0 +1,34 @@
+<view class="map-container">
+  <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" polyline="{{polyline}}" style="width: 100%; height: 300px;" bindmarkertap="markertap"></map>
+</view>
+
+<view class="input-container">
+  <text>输入目的地</text>
+  <input type="text" bindinput="onInput" bindfocus="onFocus" bindblur="onBlur" value="{{searchQuery}}" />
+</view>
+
+<view class="suggestions-container" wx:if="{{suggestions.length > 0}}">
+  <block wx:for="{{suggestions}}" wx:key="id">
+    <view class="suggestion-item" data-lat="{{item.location.lat}}" data-lng="{{item.location.lng}}" data-title="{{item.title}}" bindtap="onSelectSuggestion">
+      <view class="suggestion-text">{{item.title}}</view>
+
+    </view>
+  </block>
+</view>
+
+<view class="picker-container">
+  <picker mode="selector" range="{{modes}}" bindchange="onModeChange">
+    <view class="picker">
+      选择交通方式：{{modes[modeIndex]}}
+    </view>
+  </picker>
+</view>
+<view>
+  <button bindtap="planRoute">规划路线</button>
+</view>
+
+<view class="result">
+  <text>距离: {{distance}} 米</text>
+  <text>时间: {{duration}} 分钟</text>
+</view>
+

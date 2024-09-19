@@ -1,0 +1,138 @@
+/* 容器样式 */  
+.container {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: flex-start;  
+  padding: 20rpx;  
+  box-sizing: border-box;  
+  height: 100%; /* 或者你需要的特定高度 */  
+}  
+  
+/* 视频内容样式 */  
+.content {  
+  text-align: center;  
+}  
+  
+.video video {  
+  width: 800rpx; /* 或者你需要的特定宽度，如 300rpx */  
+  max-width: 1000rpx; /* 根据需要调整 */  
+  margin-bottom: 20rpx;  
+}  
+  
+.video button {  
+  margin-top: 10rpx; /* 控制按钮与视频的间距 */  
+}  
+  
+/* 简介内容样式 */  
+.scroll-user {  
+  display: flex;  
+  flex-direction: column;  
+  margin-bottom: 20rpx; /* 与评论的间距 */  
+}  
+  
+.box {  
+  display: flex;  
+  flex-direction: column;
+  font-size: large;
+  margin-bottom: 10rpx; /* 每个简介块之间的间距 */  
+}  
+  
+.text1{  
+  /* 根据需要定义字体大小、颜色等 */  
+  font-size: 20px;  
+  color: #333;  
+  margin-bottom: 5rpx; /* 文本之间的间距 */  
+} 
+.text2{
+  text-indent: 2em;
+  font-size: 12px;  
+  color: #333;  
+  margin-bottom: 5rpx; /* 文本之间的间距 */
+}
+
+  
+/* 评论样式 */  
+.comment {  
+  height: 33%; 
+  padding: 10rpx;  
+  background-color: #f5f5f5; /* 背景色 */  
+  overflow-y: auto; /* 启用垂直滚动 */  
+}  
+  
+.userInfo {  
+  height: 100rpx;
+  display: flex;  
+  flex-direction: column;  
+  margin-bottom: 10rpx; /* 每个评论之间的间距 */  
+}  
+  
+.userinfo-top {  
+  height: 10px;
+  display: flex;  
+  align-items: center;  
+}  
+  
+.userinfo-avatar {  
+  width: 60rpx;  
+  height: 60rpx;  
+  border-radius: 50%;  
+  margin-right: 10rpx;  
+  margin-top: 15px;
+}  
+  
+.userinfo-nickname{  
+  /* 根据需要定义字体大小、颜色等 */  
+  height: 10px;
+  font-size: 30rpx;  
+  color: #666;  
+  margin-top: 10rpx;
+}  
+.text4{
+  height: 10px;
+  font-size: 30rpx;  
+  color: #666;  
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+.con {  
+  /* 评论内容的样式 */  
+  font-size: 30rpx;  
+  color: #333;  
+  margin-top: 20px;  
+}  
+  
+/* 评论框样式 */  
+.inputtext {  
+  position: fixed;
+  top: 1040rpx;
+  display: flex; /* 使用Flexbox布局 */  
+  align-items: center; /* 使按钮和输入框垂直居中对齐 */  
+  margin-top: 20rpx; /* 与评论列表的间距 */  
+}  
+  
+.inputtext input {  
+  /* 输入框的样式 */  
+  height: 40px;
+  width: 600rpx;
+  border: 1rpx solid #ccc;  
+  border-radius: 10rpx;  
+  padding: 10rpx;  
+  font-size: 14px;  
+  flex: 1; /* 使输入框占据剩余空间 */  
+  margin-right: 10rpx; /* 与按钮的间距 */  
+  background-color: #fff;  
+
+}  
+  
+.inputtext .btn {  
+  /* 发布按钮的样式 */  
+  height: 50px;
+  width: 120rpx;
+  font-size: 20px;
+  padding-left: 10rpx; 
+  padding-right: 10rpx;
+  background-color: #009688;  
+  color: #fff;  
+  border-radius: 10rpx;  
+}

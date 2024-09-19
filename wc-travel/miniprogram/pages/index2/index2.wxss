@@ -1,0 +1,126 @@
+/* index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  background-color: #f0f0f0; 
+}
+.shou{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.text-container{
+font-size: 20px;
+padding: 1px 1px;
+font-family: serif;
+font-weight: initial;
+color:green;
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40vh;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 0;
+  
+}
+
+
+
+
+.button-item {
+  width: 45%;
+  margin: 10px 0;
+  background-color:  green;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+
+
+
+.button-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.button-text {
+  font-size: 18px;
+  color: rgb(238, 232, 232);
+  padding: 10px 0;
+}
+
+
+
+.service-container {
+  width: 100%;
+  padding: 20px 0 0 20px;
+  color: rgb(29, 180, 29); /* Set text color to green */
+  font-size: 15px; /* Set default font size */
+
+}
+.service-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  margin-bottom: 3px; 
+}
+
+.service-title{
+  font-size: 11px; /* Set default font size */
+  margin-bottom: 3px; 
+}
+.service-time2{
+  font-size: 10px;
+
+}

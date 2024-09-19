@@ -1,0 +1,30 @@
+<view class="backg-color">
+  <image class="cover-image" src="{{first_photo[0].url}}"></image>
+
+  <view class="attraction-container"> 
+    <view class="zhaoqingdh">{{first_photo[0].name}}</view>
+      <view class="ticket-info">
+          <navigator url="/pages/goupiao/goupiao"class="purchase-link">购票入口</navigator>
+      </view>
+  </view>
+
+    <!-- 简介 -->
+  <view>
+    <view class="attraction-info">
+      <view class="attraction-name">{{attraction.name}}</view>
+      <view class="attraction-introduction">{{first_photo[0].introduce}}</view>
+    </view>
+  </view>
+
+  <text class="attraction-name2">热门打卡点</text>
+
+  <!-- 打卡点 -->
+  <view wx:for="{{photos}}">
+    <view class="attraction-container">
+      <text class="attraction-introduction1">{{item.spot}}</text>
+      <text  class="attraction-introduction">{{item.content}}</text>
+    </view>
+    <image src="{{item.url}}" class="dakadian1zhaopian"></image>
+  </view>
+
+</view>

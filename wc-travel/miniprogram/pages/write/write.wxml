@@ -1,0 +1,22 @@
+<!-- 发表评论 -->
+<!-- <view class="login_root" wx:if="{{userInfo&&userInfo.name}}">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view>
+        <view class="name">{{userInfo.name}}</view>
+    </view>
+</view> -->
+
+<form bindsubmit="addComments">
+    <view class="item">
+      <text>评论：</text>
+      <image class="choose"  bind:tap="chooseImg" src="/images/photos.png" mode="widthFix"></image>
+      <input name="text" placeholder="        善语结善缘，恶语伤人心"></input>
+    </view>
+    <view>
+      <!-- 图片 -->
+      <view wx:if="{{imgurl}}">
+        <image src="{{imgurl}}" mode="widthFix"></image>
+      </view>
+      <button class="submit" form-type="submit" bind:tap="addComments"><text>发送</text></button>
+    </view>
+</form>

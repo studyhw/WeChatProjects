@@ -1,0 +1,66 @@
+ 
+ 
+/* 列表标题 */
+.list_title{
+  background-color: transparent;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+  color: rgb(7, 7, 7);
+  font-weight: 800;
+  font-size: 36rpx;
+}
+ 
+/* item */
+.waterfall {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-flow: row dense;
+  grid-auto-rows: 15px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+ 
+.waterfall .item {
+  width: 100%;
+  background: #cccccc;
+  color: rgb(197, 197, 197);
+}
+ 
+.waterfall .item:nth-of-type(2n+1) {
+  grid-row: auto / span 7;
+  border-radius: 10rpx;
+}
+.waterfall .item:nth-of-type(2n+2) {
+  grid-row: auto / span 5;
+  border-radius: 10rpx;
+}
+/* .waterfall .item:nth-of-type(3n+3) {
+  grid-row: auto / span 12;
+  border-radius: 10rpx;
+} */
+ 
+/* item图片 */
+.list_item_pic{
+  height: 100%;
+  width: 100%;
+  border-radius: 10rpx;
+}
+ 
+/* item文本 */
+.item_conn_des{
+  color: #ffffff;
+  font-size: 26rpx;
+  width: 240rpx;
+  font-weight: bolder;
+  position: relative;
+  bottom: 70rpx;
+  margin-left: 10rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-items: flex-start;
+  display: -webkit-box;
+  overflow: hidden;
+}
+/* 列表部分 */

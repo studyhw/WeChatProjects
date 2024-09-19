@@ -1,0 +1,108 @@
+
+swiper{
+  height: 200px;
+}
+.lunbo image{
+  width: 100%;
+  /* height: 500px; */
+}
+
+.tips{
+  width: 95%;
+  height: 38px;
+  margin: 8px;
+  margin-top: 12px;
+  border-radius: 20px;
+  background-color: rgba(220, 220, 220, 0.377);
+}
+.tips image{
+  width: 25px;
+  height: 25px;
+  padding: 8px;
+  margin-left: 8px;
+  margin-top: -2px;
+}
+
+.tips text{
+  padding-bottom: 12px;
+  overflow: hidden;  
+  text-overflow: ellipsis;  
+  white-space: nowrap;  
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 14px;
+  color:rgb(63, 60, 60);
+}
+.choice{
+  display: flex; /* 使子元素在同一行显示 */  
+  align-items: center; /* 子元素在交叉轴上居中对齐 */  
+  padding-top: 3px;
+  margin-top: 15px;
+}
+.choice view{
+  display: flex; /* 启用Flexbox布局，使子元素垂直排列 */  
+   flex-direction: column; /*子元素的主轴方向为垂直   */
+  align-items: center; /* 子元素在交叉轴上居中对齐 */  
+  font-size: 16px;
+  margin: 3px 8px 0px 8px;
+  padding: 6px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  border: 1px solid rgba(182, 177, 177, 0.178); 
+}
+.choice image{
+width: 48px;
+height: 48px;
+margin: 3px;
+}
+.choice text{
+  margin-top: 3px;
+  font-family: 'SimHei', '黑体', sans-serif; /* 字体类型 */  
+}
+/* 天气 */
+.weather {  
+  margin: 10px 5px;
+  display: flex;  
+  align-items: center; 
+  border-radius: 20px;
+  background-color: rgba(238, 236, 236, 0.219);
+  padding:8px;
+}  
+
+.weatherTitle{
+  color: sandybrown;
+  margin-right: 30px;
+  margin-left: 8px;
+}
+.weatherTem {  
+  margin: 0 10px;   
+}  
+  
+.choiceRegion{  
+  /* Picker组件可能需要一些特定的样式来适应flex布局 */  
+  display: flex;  
+  align-items: center; /* 垂直居中 */  
+  font-family: 'SimHei', '黑体', sans-serif; /* 字体类型 */  
+}  
+  
+  
+.weather image{  
+  height: 30px; /* 假设图标高度为30px */  
+  width: 30px; /* 保持图片的宽高比 */  
+  margin-left: 10px; /* 例如，给图标添加一些间距 */  
+}
+
+/* 介绍 */
+.introduce{
+  margin: 25px 8px;
+  padding: 8px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+}
+.introduceTitle{
+font-size: 30px;
+text-align: center;
+display: flex;
+justify-content: center;
+}

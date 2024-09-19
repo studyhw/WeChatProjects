@@ -1,0 +1,11 @@
+  <!-- 列表 -->
+  <view class="list_title">特色美食</view>
+  <view class="waterfall">
+    <block wx:for="{{foods}}" >
+      <view class="item" bindtap="bindViewTap" data-id="{{item.id}}">
+        <image class="list_item_pic" mode='scaleToFill' src="{{item.coverUrl}}">
+        </image>
+        <text class="item_conn_des">{{item.name}}</text>
+      </view>
+    </block>
+  </view>

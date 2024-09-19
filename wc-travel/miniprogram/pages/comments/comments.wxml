@@ -1,0 +1,28 @@
+<view class="container">
+<!-- 卡片 -->
+    <view wx:for="{{commentsList}}" class="card">
+        <!-- 卡片信息 -->
+        <view  class="card-head">
+            <image class='avatar' src='{{item.userimg}}' mode='widthFix'></image>
+            <view class="title">
+                <text class="nickName">{{item.nickname}}</text>
+                <text class="card-foot">{{item.time}}</text>
+            </view>
+        </view>
+        <!-- 卡片主体 -->
+        <view class="card-body">
+            <text class="comment">{{item.content}}</text>
+            <view wx:if="{{item.imgurl}}">
+                <image src='{{item.imgurl}}' mode='widthFix'></image>
+            </view>
+        </view>
+        <!-- 分割线 -->
+        <view class="divider">
+            <view class="divider-line"></view>
+        </view>
+    </view>
+</view>
+<!-- 上传图片按钮 -->
+<view class="floatBtn">
+    <button size="mini" type="primary" bindtap="goComment">参与评论</button>
+</view>

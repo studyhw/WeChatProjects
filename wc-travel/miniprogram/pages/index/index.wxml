@@ -1,0 +1,60 @@
+<view class="lunbo">
+<swiper  indicator-dots="{{true}}"  
+  autoplay="{{true}}"  
+  interval="{{2000}}"  
+  duration="{{1000}}"  
+  circular="{{true}}" >
+  <swiper-item wx:for="{{lunboList}}" wx:key="lunbo">
+     <image src="{{item.img}}" mode=""/>
+  </swiper-item>
+</swiper>
+</view>
+
+<!-- 喇叭公告 -->
+<view class="tips">
+<image src="../../images/home/laba.png" mode=""/>
+<text>全新体验！星湖首艘轻餐饮画舫来啦！</text>
+</view>
+
+<!-- 选择与跳转 -->
+<view class="choice">
+<view class="traffic" bindtap="gotoTraffic">
+<image src="../../images/home/traffic.png" mode=""/>
+<text>交 通</text>
+</view>
+<view class="food"  bindtap="gotoFood">
+<image src="../../images/home/food.png" mode=""/>
+<text>美 食</text>
+</view>
+<view class="sights"  bindtap="gotoSights">
+<image src="../../images/home/sights.png" mode=""/>
+<text>景 点</text>
+</view>
+<view class="suggest"  bindtap="gotoSuggest">
+<image src="../../images/home/suggest.png" mode=""/>
+<text>建 议</text>
+</view>
+</view>
+<!-- 天气 -->
+<view class="weather">
+<text class="weatherTitle">今日天气</text>
+<!-- 地区选择器 -->
+<picker mode="region" bindchange="regionChange" class="choiceRegion">
+<view class="Title">{{region}}
+</view>  
+</picker>
+<!-- 单行天气信息 -->
+<text class="weatherTem">{{now.temp}}℃{{now.cond_txt}}</text>
+<!-- 天气图标 -->
+<image src="/images/weather_icon/{{now.icon}}.png" mode="widthFix"/>
+</view>
+
+<!-- 文字介绍 -->
+<view class="introduce">
+<text class="introduceTitle">魅力肇庆</text>
+<text  decode="true">
+&emsp;&emsp;肇庆市，古称端州，广东省辖地级市，是粤港澳大湾区、珠江—西江经济带的重要节点城市，广佛肇经济圈、广州都市圈重要组成部分。2023年，被评为三线城市。全市下辖3个区、4个县、代管1个县级市，另设肇庆高新区、肇庆新区和粤桂合作特别试验区（肇庆）3 个功能区，总面积约14897.45平方千米，2023年，肇庆市常住人口413.17万人，其中城镇人口219.37万人，城镇化率为53.09%。
+  &emsp;&emsp;肇庆市地处广东省中西部，是东南沿海通往西南各省的重要交通枢纽。肇庆城区的七星岩，素有“岭南第一奇观”的美誉；鼎湖山是国家级自然保护区。以星湖风景区为中心，沿西江、绥江溯江而上，盘龙峡、“天下第一石”、千层峰、广宁竹海大观、燕岩等景点次递展开，构成了千里旅游走廊的绚丽画卷。
+  &emsp;&emsp;肇庆市是国家历史文化名城、全国文明城市、广府宜居山水城市 ，既是岭南土著文化和西江文化、广府文化的发祥地，也是中原文化与岭南文化、西方文化与中国传统文化最早的交汇处。肇庆扼两广之咽喉，有着“岭表南来第一州”之誉；历史上曾五次成为岭南或大西南政治、经济和文化中心。汉朝设置广信；隋朝置端州；宋朝（1118年）设肇庆府；明朝至清朝，肇庆是两广总督府驻地；明清之际，是南明永历王朝首都。
+</text>
+</view>

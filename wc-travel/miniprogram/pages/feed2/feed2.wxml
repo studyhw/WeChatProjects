@@ -1,0 +1,16 @@
+<view class="container">  
+  <view class="input-area">  
+    <textarea placeholder="请输入您的反馈..." bindinput="bindInput" value="{{feedbackContent}}"></textarea>  
+    <button bindtap="submitFeedback" type="primary"
+    size="mini">提交反馈</button>  
+  </view>  
+  <view class="feedback-list">  
+    <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}">  
+      <block wx:for="{{feedbackList}}" wx:key="index">  
+        <view class="feedback-item">  
+          <text>{{item}}</text>  
+        </view>  
+      </block>  
+    </scroll-view>  
+  </view>  
+</view>

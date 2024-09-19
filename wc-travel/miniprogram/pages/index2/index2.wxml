@@ -1,0 +1,37 @@
+<!-- 轮播图 -->
+<view class="container" >
+  <swiper class="swiper-container" indicator-dots="true" autoplay="true" interval="3000" duration="500" >
+    <swiper-item wx:for="{{swiperImg}}">
+      <image src="{{item.url}}" class="swiper-image"/>
+      <text class="swiper-text">{{item.name}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 景点跳转 -->
+<view class="container">
+  <text class="text-container">景点·游玩</text>
+    <view class="button-container">
+      <view class="button-item" bindtap="navigateToSpot" wx:for="{{swiperImg}}" data-id="{{item.id}}">
+        <image src="{{item.url}}" class="button-image"/>
+        <text class="button-text">{{item.name}}</text>
+      </view>
+    </view>
+
+  <!-- 下方提示 -->
+  <view class="service-container">
+    <view class="service-info">
+    <text class="service-title">客服热线/Service Hotline/コールセンターホットライン</text>
+    <text class="service-number"> 123-456-7890</text>
+    </view>
+  <view class="service-info">
+
+    <text class="service-title">服务时间/Service Time/サービス時間</text>
+    <text class="service-time"> 9:00<text class="service-time2">AM</text> ~ 18:00<text class="service-time2">PM</text></text>
+   
+  
+  </view>
+  </view>
+
+</view>
+

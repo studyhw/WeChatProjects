@@ -1,0 +1,19 @@
+<!-- 登陆和未登陆 -->
+<view class="login_root" wx:if="{{userInfo&&userInfo.name}}">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view>
+        <view class="name">{{userInfo.name}}</view>
+        <view class="tuichu" bindtap="tuichu">退出登录</view>
+    </view>
+</view>
+<view wx:else class="login_root" bindtap="login">
+    <image class="avatar" src="/images/no_login.png"></image>
+    <view class="name">点击登陆</view>
+</view>
+
+<view wx:if="{{userInfo&&userInfo.name}}">
+    <view class='my_item' bindtap="goChange">
+        <text>修改资料</text>
+        <view class='right_arrow' />
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="item">
+    <view class="tip">编辑姓名</view>
+    <input value="{{name}}" bindinput="getName" />
+</view>
+<view class="line"></view>
+
+<view class="item" bindtap="chooseImage">
+    <view class="tip">点击修改头像</view>
+    <image src="{{avatarUrl}}" />
+</view>
+<button class="btn" bindtap="submit">提交修改</button>

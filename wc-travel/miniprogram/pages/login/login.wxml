@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class="root">
+  <view class="top">
+    <image class="login-img" src="/images/no_login.png"></image>
+  </view>
+  <form bindsubmit="create_login">
+    <view class="item">
+      <text>手机：</text><input name="phone" placeholder="请输入您的手机号"></input>
+    </view>
+    <view class="item">
+      <text>密码：</text><input name="password" placeholder="请输入您的密码" password="true"></input>
+    </view>
+    <button class="submit" form-type="submit"><text>登录</text></button>
+  </form>
+  <view class="zhuce" bindtap="zhuce">暂无账号,前往注册</view>
+</view>

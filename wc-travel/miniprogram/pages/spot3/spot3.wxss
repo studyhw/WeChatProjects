@@ -1,0 +1,97 @@
+.backg-color{
+  background-color: rgb(207, 231, 224);
+}
+
+.zhaoqingdh{
+  font-size: 42rpx;
+  padding:10px 10px ;
+  font-weight: 900; /* 字体加粗 */
+  letter-spacing: 3px; /* 增加字间距 */
+  color: #044204;
+  align-items: center;
+}
+.attraction-container {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  padding: 20px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 400rpx;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.dakadian1zhaopian{
+  width: 100%;
+  height: 400rpx;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.attraction-info {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+
+.attraction-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  color: rgb(16, 65, 28);
+}
+
+.attraction-name2 {
+  /* text-align: left; */
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 60rpx;
+  
+  color: rgb(16, 65, 28);
+}
+
+.attraction-introduction1{
+  font-size: 18px;
+  color: rgb(3, 94, 26);
+  margin-bottom: 20rpx;
+
+
+}
+.attraction-introduction {
+  text-indent: 2em;
+  font-size: 13px;
+  color: rgb(3, 94, 26);
+  margin-bottom: 20rpx;
+}
+
+
+.attraction-dakadian{
+  font-size: 24rpx;
+  color: rgb(3, 94, 26);
+  margin-bottom: 20rpx;
+
+
+}
+
+.purchase-link {
+  display: inline-block;
+  font-size: 28rpx; /* 增加字体大小 */
+  color: #ffffff; /* 白色字体 */
+  background-color: #1aad19; /* 蓝色背景 */
+  text-decoration: none;
+  padding: 8px 16px; /* 调整内边距 */
+  border-radius: 20px; /* 圆边框 */
+  border: 2px solid #1aad19; /* 边框颜色与背景色相同 */
+  width: auto; /* 自动调整宽度 */
+  min-width: 220px; /* 最小宽度 */
+  text-align: center; /* 文本居中 */
+  font-weight: 900; /* 字体加粗 */
+  letter-spacing: 5px; /* 增加字间距 */
+}
+
+
+
+

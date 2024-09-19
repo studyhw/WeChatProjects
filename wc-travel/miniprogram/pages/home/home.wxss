@@ -1,0 +1,51 @@
+page {
+    background: gainsboro;
+}
+
+.login_root {
+    display: flex;
+    padding: 50rpx;
+    align-items: center;
+    background: #2E8B57;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 180rpx;
+    height: 180rpx;
+    margin-right: 30rpx;
+    background: gainsboro;
+
+}
+
+.name {
+    font-size: 40rpx;
+    color: white;
+}
+
+.tuichu {
+    font-size: 32rpx;
+    color: FFFFFF;
+    margin-top: 10rpx;
+}
+
+.my_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20rpx;
+    background: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+.right_arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    position: absolute;
+    right: 15px;
+    /* margin-left: 66%; */
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

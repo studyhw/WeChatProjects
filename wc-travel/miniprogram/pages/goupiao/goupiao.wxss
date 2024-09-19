@@ -1,0 +1,56 @@
+.container {
+  padding: 20rpx;
+}
+
+.ticket {
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: #d3d3d3;
+  box-shadow: 0 2rpx 4rpx rgba(1, 0, 0, 0.1);
+  margin-bottom: 10px; /* 适当调整间隙大小 */
+}
+
+.ticket-image {
+  margin-bottom: 20px; /* 适当调整间隙大小 */
+  width: 100%;
+  border-radius: 10rpx 10rpx 0 0;
+}
+
+.ticket-info {
+  padding: 20rpx;
+}
+
+.ticket-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ticket-price {
+  font-size: 16px;
+  color: #f60;
+}
+
+.ticket-detail {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5rpx;
+}
+
+.buy-button {
+  display: block;
+  width: 400rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding: 10rpx;
+  background-color: #ff5757;
+  color: #fff;
+  border: 1rpx solid #ff5757; 
+  border-radius: 20rpx;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+

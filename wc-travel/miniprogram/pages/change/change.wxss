@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15rpx;
+    border-bottom: 1rpx solid gray;
+    padding-bottom: 20rpx;
+}
+
+.tip {
+    font-size: 44rpx;
+    margin: 20rpx;
+    color: red;
+}
+
+.item image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+    margin: 10rpx 30rpx;
+
+}
+
+.item input {
+    flex: 1;
+    border: 1px solid gray;
+    border-radius: 20rpx;
+    padding: 5rpx 15rpx;
+}
+
+.btn {
+    color: white;
+    margin-top: 70rpx;
+    background-color: #2E8B57;
+    width: 600rpx;
+    border-radius: 50rpx;
+  }
+

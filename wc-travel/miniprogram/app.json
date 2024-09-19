@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/map/map",
+    "pages/spot1/spot1",
+    "pages/spot2/spot2",
+    "pages/spot3/spot3",
+    "pages/spot4/spot4",
+    "pages/goupiao/goupiao",
+    "pages/feed2/feed2",
+    "pages/logs/logs",
+    "pages/indexms/indexms",
+    "pages/detailms/detailms",
+    "pages/comments/comments",
+    "pages/login/login",
+    "pages/homepage/homepage",
+    "pages/register/register",
+    "pages/home/home",
+    "pages/change/change",
+    "pages/write/write",
+    "pages/fw/fw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "肇庆旅游",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
+
+  "tabBar": {
+    "list": [{
+      "pagePath":"pages/index/index",
+      "text": "首页",
+      "iconPath": "images/society.png",
+      "selectedIconPath": "images/society.png"
+    },
+    {
+      "pagePath":"pages/comments/comments",
+      "text": "评论",
+      "iconPath": "images/liuyan.png",
+      "selectedIconPath": "images/liuyan.png"
+    },
+    {
+      "pagePath":"pages/login/login",
+      "text": "我的",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home.png"
+    }
+  ]
+  },
+
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}
